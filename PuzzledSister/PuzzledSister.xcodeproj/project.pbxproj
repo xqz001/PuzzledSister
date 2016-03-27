@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2766303B4B08CD0EB7EAECAF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E0D79E49D84B5050D07FDF /* libPods.a */; };
+		D00B7CF01C90604D00ACF88A /* XQZRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00B7CEF1C90604D00ACF88A /* XQZRecommendViewController.m */; };
+		D00B7CF41C90612C00ACF88A /* XQZRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D00B7CF21C90612C00ACF88A /* XQZRecommendCell.m */; };
+		D00B7CF51C90612C00ACF88A /* XQZRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D00B7CF31C90612C00ACF88A /* XQZRecommendCell.xib */; };
+		D00B7CF81C9072E300ACF88A /* XQZRecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D00B7CF71C9072E300ACF88A /* XQZRecommendModel.m */; };
 		D03E38631C78656F000AADE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D03E38601C78656F000AADE2 /* AppDelegate.m */; };
 		D03E38691C786635000AADE2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D03E38671C786635000AADE2 /* Info.plist */; };
 		D03E386A1C786635000AADE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D03E38681C786635000AADE2 /* main.m */; };
@@ -16,11 +21,37 @@
 		D03E38A51C786838000AADE2 /* XQZMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03E38991C786838000AADE2 /* XQZMeViewController.m */; };
 		D03E38A61C786838000AADE2 /* XQZNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03E389F1C786838000AADE2 /* XQZNewViewController.m */; };
 		D03E38A91C7869DF000AADE2 /* XQZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D03E38A81C7869DF000AADE2 /* XQZTabBar.m */; };
+		D05C823A1C82D3F500C91C46 /* XQZCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D05C82381C82D3F500C91C46 /* XQZCategoryCell.m */; };
+		D05C823B1C82D3F500C91C46 /* XQZCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05C82391C82D3F500C91C46 /* XQZCategoryCell.xib */; };
+		D05C823F1C82E1A800C91C46 /* XQZUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D05C823D1C82E1A800C91C46 /* XQZUserCell.m */; };
+		D05C82401C82E1A800C91C46 /* XQZUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05C823E1C82E1A800C91C46 /* XQZUserCell.xib */; };
+		D08903231C809A3300BCED4C /* XQZAttentionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D08903221C809A3300BCED4C /* XQZAttentionViewController.xib */; };
+		D08903271C81885300BCED4C /* XQZFriendThrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D08903251C81885300BCED4C /* XQZFriendThrendsViewController.m */; };
+		D08903281C81885300BCED4C /* XQZFriendThrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D08903261C81885300BCED4C /* XQZFriendThrendsViewController.xib */; };
+		D089032B1C81941B00BCED4C /* XQZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D089032A1C81941B00BCED4C /* XQZCategory.m */; };
+		D089032E1C82189100BCED4C /* XQZUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D089032D1C82189100BCED4C /* XQZUser.m */; };
+		D092BF771C7CB0B1008E7019 /* UIBarButtonItem+XQZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D092BF761C7CB0B1008E7019 /* UIBarButtonItem+XQZExtension.m */; };
+		D097F7C71C7CC16B004033F6 /* UIView+XQZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D097F7C61C7CC16B004033F6 /* UIView+XQZExtension.m */; };
 		D09F9C6A1C59242400D36083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09F9C691C59242400D36083 /* Assets.xcassets */; };
 		D09F9C6D1C59242400D36083 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09F9C6B1C59242400D36083 /* LaunchScreen.storyboard */; };
+		D0B1545B1C9ECE2000049206 /* XQZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B154591C9ECE2000049206 /* XQZLoginViewController.m */; };
+		D0B1545C1C9ECE2000049206 /* XQZLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B1545A1C9ECE2000049206 /* XQZLoginViewController.xib */; };
+		D0DE0C3E1C88950300388C7A /* XQZUserGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DE0C3D1C88950300388C7A /* XQZUserGroup.m */; };
+		D0DE21E61C7F3190006D06C5 /* XQZNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DE21E51C7F3190006D06C5 /* XQZNavigationViewController.m */; };
+		D0DE21E91C7F4CE6006D06C5 /* XQZTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DE21E81C7F4CE6006D06C5 /* XQZTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60287EF256A97A22237EAF1A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		62508A2C4632A47B7260D65B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		80E0D79E49D84B5050D07FDF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00B7CEE1C90604D00ACF88A /* XQZRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZRecommendViewController.h; sourceTree = "<group>"; };
+		D00B7CEF1C90604D00ACF88A /* XQZRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZRecommendViewController.m; sourceTree = "<group>"; };
+		D00B7CF11C90612C00ACF88A /* XQZRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZRecommendCell.h; sourceTree = "<group>"; };
+		D00B7CF21C90612C00ACF88A /* XQZRecommendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZRecommendCell.m; sourceTree = "<group>"; };
+		D00B7CF31C90612C00ACF88A /* XQZRecommendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XQZRecommendCell.xib; sourceTree = "<group>"; };
+		D00B7CF61C9072E300ACF88A /* XQZRecommendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZRecommendModel.h; sourceTree = "<group>"; };
+		D00B7CF71C9072E300ACF88A /* XQZRecommendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZRecommendModel.m; sourceTree = "<group>"; };
 		D03E385F1C78656F000AADE2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D03E38601C78656F000AADE2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D03E38671C786635000AADE2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,9 +68,37 @@
 		D03E389F1C786838000AADE2 /* XQZNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZNewViewController.m; sourceTree = "<group>"; };
 		D03E38A71C7869DF000AADE2 /* XQZTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZTabBar.h; sourceTree = "<group>"; };
 		D03E38A81C7869DF000AADE2 /* XQZTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZTabBar.m; sourceTree = "<group>"; };
+		D05C82371C82D3F500C91C46 /* XQZCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZCategoryCell.h; sourceTree = "<group>"; };
+		D05C82381C82D3F500C91C46 /* XQZCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZCategoryCell.m; sourceTree = "<group>"; };
+		D05C82391C82D3F500C91C46 /* XQZCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XQZCategoryCell.xib; sourceTree = "<group>"; };
+		D05C823C1C82E1A800C91C46 /* XQZUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZUserCell.h; sourceTree = "<group>"; };
+		D05C823D1C82E1A800C91C46 /* XQZUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZUserCell.m; sourceTree = "<group>"; };
+		D05C823E1C82E1A800C91C46 /* XQZUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XQZUserCell.xib; sourceTree = "<group>"; };
+		D08903221C809A3300BCED4C /* XQZAttentionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XQZAttentionViewController.xib; sourceTree = "<group>"; };
+		D08903241C81885300BCED4C /* XQZFriendThrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZFriendThrendsViewController.h; sourceTree = "<group>"; };
+		D08903251C81885300BCED4C /* XQZFriendThrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZFriendThrendsViewController.m; sourceTree = "<group>"; };
+		D08903261C81885300BCED4C /* XQZFriendThrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XQZFriendThrendsViewController.xib; sourceTree = "<group>"; };
+		D08903291C81941B00BCED4C /* XQZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZCategory.h; sourceTree = "<group>"; };
+		D089032A1C81941B00BCED4C /* XQZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZCategory.m; sourceTree = "<group>"; };
+		D089032C1C82189100BCED4C /* XQZUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZUser.h; sourceTree = "<group>"; };
+		D089032D1C82189100BCED4C /* XQZUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZUser.m; sourceTree = "<group>"; };
+		D092BF701C7CA9AD008E7019 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D092BF751C7CB0B1008E7019 /* UIBarButtonItem+XQZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XQZExtension.h"; sourceTree = "<group>"; };
+		D092BF761C7CB0B1008E7019 /* UIBarButtonItem+XQZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XQZExtension.m"; sourceTree = "<group>"; };
+		D097F7C51C7CC16B004033F6 /* UIView+XQZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XQZExtension.h"; sourceTree = "<group>"; };
+		D097F7C61C7CC16B004033F6 /* UIView+XQZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XQZExtension.m"; sourceTree = "<group>"; };
 		D09F9C5A1C59242400D36083 /* PuzzledSister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzledSister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09F9C691C59242400D36083 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D09F9C6C1C59242400D36083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0B154581C9ECE2000049206 /* XQZLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZLoginViewController.h; sourceTree = "<group>"; };
+		D0B154591C9ECE2000049206 /* XQZLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZLoginViewController.m; sourceTree = "<group>"; };
+		D0B1545A1C9ECE2000049206 /* XQZLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XQZLoginViewController.xib; sourceTree = "<group>"; };
+		D0DE0C3C1C88950300388C7A /* XQZUserGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZUserGroup.h; sourceTree = "<group>"; };
+		D0DE0C3D1C88950300388C7A /* XQZUserGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZUserGroup.m; sourceTree = "<group>"; };
+		D0DE21E41C7F3190006D06C5 /* XQZNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZNavigationViewController.h; sourceTree = "<group>"; };
+		D0DE21E51C7F3190006D06C5 /* XQZNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZNavigationViewController.m; sourceTree = "<group>"; };
+		D0DE21E71C7F4CE6006D06C5 /* XQZTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZTestViewController.h; sourceTree = "<group>"; };
+		D0DE21E81C7F4CE6006D06C5 /* XQZTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +106,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2766303B4B08CD0EB7EAECAF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DCCF9D2A5D00C3148AEB23C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62508A2C4632A47B7260D65B /* Pods.debug.xcconfig */,
+				60287EF256A97A22237EAF1A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		52271F4D1BCEFF4B05062B6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80E0D79E49D84B5050D07FDF /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D03E385E1C78656F000AADE2 /* Other */ = {
 			isa = PBXGroup;
 			children = (
 				D03E385F1C78656F000AADE2 /* AppDelegate.h */,
 				D03E38601C78656F000AADE2 /* AppDelegate.m */,
+				D092BF701C7CA9AD008E7019 /* PrefixHeader.pch */,
+				D0DE21E71C7F4CE6006D06C5 /* XQZTestViewController.h */,
+				D0DE21E81C7F4CE6006D06C5 /* XQZTestViewController.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -65,6 +145,7 @@
 		D03E38831C786838000AADE2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D092BF711C7CABC2008E7019 /* Category */,
 				D03E38841C786838000AADE2 /* Attention */,
 				D03E388A1C786838000AADE2 /* Best */,
 				D03E38901C786838000AADE2 /* Main */,
@@ -89,6 +170,13 @@
 			children = (
 				D03E38861C786838000AADE2 /* XQZAttentionViewController.h */,
 				D03E38871C786838000AADE2 /* XQZAttentionViewController.m */,
+				D08903221C809A3300BCED4C /* XQZAttentionViewController.xib */,
+				D08903241C81885300BCED4C /* XQZFriendThrendsViewController.h */,
+				D08903251C81885300BCED4C /* XQZFriendThrendsViewController.m */,
+				D08903261C81885300BCED4C /* XQZFriendThrendsViewController.xib */,
+				D0B154581C9ECE2000049206 /* XQZLoginViewController.h */,
+				D0B154591C9ECE2000049206 /* XQZLoginViewController.m */,
+				D0B1545A1C9ECE2000049206 /* XQZLoginViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -96,6 +184,12 @@
 		D03E38881C786838000AADE2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D08903291C81941B00BCED4C /* XQZCategory.h */,
+				D089032A1C81941B00BCED4C /* XQZCategory.m */,
+				D089032C1C82189100BCED4C /* XQZUser.h */,
+				D089032D1C82189100BCED4C /* XQZUser.m */,
+				D0DE0C3C1C88950300388C7A /* XQZUserGroup.h */,
+				D0DE0C3D1C88950300388C7A /* XQZUserGroup.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,6 +197,12 @@
 		D03E38891C786838000AADE2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D05C82371C82D3F500C91C46 /* XQZCategoryCell.h */,
+				D05C82381C82D3F500C91C46 /* XQZCategoryCell.m */,
+				D05C82391C82D3F500C91C46 /* XQZCategoryCell.xib */,
+				D05C823C1C82E1A800C91C46 /* XQZUserCell.h */,
+				D05C823D1C82E1A800C91C46 /* XQZUserCell.m */,
+				D05C823E1C82E1A800C91C46 /* XQZUserCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -122,6 +222,8 @@
 			children = (
 				D03E388C1C786838000AADE2 /* XQZBestViewController.h */,
 				D03E388D1C786838000AADE2 /* XQZBestViewController.m */,
+				D00B7CEE1C90604D00ACF88A /* XQZRecommendViewController.h */,
+				D00B7CEF1C90604D00ACF88A /* XQZRecommendViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -129,6 +231,8 @@
 		D03E388E1C786838000AADE2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D00B7CF61C9072E300ACF88A /* XQZRecommendModel.h */,
+				D00B7CF71C9072E300ACF88A /* XQZRecommendModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -136,6 +240,9 @@
 		D03E388F1C786838000AADE2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D00B7CF11C90612C00ACF88A /* XQZRecommendCell.h */,
+				D00B7CF21C90612C00ACF88A /* XQZRecommendCell.m */,
+				D00B7CF31C90612C00ACF88A /* XQZRecommendCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,6 +262,8 @@
 			children = (
 				D03E38921C786838000AADE2 /* XQZTabBarController.h */,
 				D03E38931C786838000AADE2 /* XQZTabBarController.m */,
+				D0DE21E41C7F3190006D06C5 /* XQZNavigationViewController.h */,
+				D0DE21E51C7F3190006D06C5 /* XQZNavigationViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -241,11 +350,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D092BF711C7CABC2008E7019 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D092BF751C7CB0B1008E7019 /* UIBarButtonItem+XQZExtension.h */,
+				D092BF761C7CB0B1008E7019 /* UIBarButtonItem+XQZExtension.m */,
+				D097F7C51C7CC16B004033F6 /* UIView+XQZExtension.h */,
+				D097F7C61C7CC16B004033F6 /* UIView+XQZExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		D09F9C511C59242400D36083 = {
 			isa = PBXGroup;
 			children = (
 				D09F9C5C1C59242400D36083 /* PuzzledSister */,
 				D09F9C5B1C59242400D36083 /* Products */,
+				2DCCF9D2A5D00C3148AEB23C /* Pods */,
+				52271F4D1BCEFF4B05062B6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -285,9 +407,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D09F9C711C59242400D36083 /* Build configuration list for PBXNativeTarget "PuzzledSister" */;
 			buildPhases = (
+				9876D47CEAA9D7E71CFC2656 /* Check Pods Manifest.lock */,
 				D09F9C561C59242400D36083 /* Sources */,
 				D09F9C571C59242400D36083 /* Frameworks */,
 				D09F9C581C59242400D36083 /* Resources */,
+				5BFD94D0F116D4159AD59EFC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,6 +434,7 @@
 				TargetAttributes = {
 					D09F9C591C59242400D36083 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = D49HWBNX5M;
 					};
 				};
 			};
@@ -338,25 +463,78 @@
 			files = (
 				D09F9C6D1C59242400D36083 /* LaunchScreen.storyboard in Resources */,
 				D09F9C6A1C59242400D36083 /* Assets.xcassets in Resources */,
+				D00B7CF51C90612C00ACF88A /* XQZRecommendCell.xib in Resources */,
 				D03E38691C786635000AADE2 /* Info.plist in Resources */,
+				D08903231C809A3300BCED4C /* XQZAttentionViewController.xib in Resources */,
+				D08903281C81885300BCED4C /* XQZFriendThrendsViewController.xib in Resources */,
+				D05C82401C82E1A800C91C46 /* XQZUserCell.xib in Resources */,
+				D05C823B1C82D3F500C91C46 /* XQZCategoryCell.xib in Resources */,
+				D0B1545C1C9ECE2000049206 /* XQZLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BFD94D0F116D4159AD59EFC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9876D47CEAA9D7E71CFC2656 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D09F9C561C59242400D36083 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0DE21E91C7F4CE6006D06C5 /* XQZTestViewController.m in Sources */,
 				D03E38A21C786838000AADE2 /* XQZAttentionViewController.m in Sources */,
+				D00B7CF81C9072E300ACF88A /* XQZRecommendModel.m in Sources */,
+				D00B7CF41C90612C00ACF88A /* XQZRecommendCell.m in Sources */,
+				D0B1545B1C9ECE2000049206 /* XQZLoginViewController.m in Sources */,
 				D03E38631C78656F000AADE2 /* AppDelegate.m in Sources */,
 				D03E38A41C786838000AADE2 /* XQZTabBarController.m in Sources */,
+				D089032E1C82189100BCED4C /* XQZUser.m in Sources */,
 				D03E38A31C786838000AADE2 /* XQZBestViewController.m in Sources */,
+				D097F7C71C7CC16B004033F6 /* UIView+XQZExtension.m in Sources */,
 				D03E38A51C786838000AADE2 /* XQZMeViewController.m in Sources */,
+				D0DE21E61C7F3190006D06C5 /* XQZNavigationViewController.m in Sources */,
+				D092BF771C7CB0B1008E7019 /* UIBarButtonItem+XQZExtension.m in Sources */,
+				D00B7CF01C90604D00ACF88A /* XQZRecommendViewController.m in Sources */,
 				D03E38A91C7869DF000AADE2 /* XQZTabBar.m in Sources */,
 				D03E38A61C786838000AADE2 /* XQZNewViewController.m in Sources */,
+				D0DE0C3E1C88950300388C7A /* XQZUserGroup.m in Sources */,
+				D08903271C81885300BCED4C /* XQZFriendThrendsViewController.m in Sources */,
+				D05C823A1C82D3F500C91C46 /* XQZCategoryCell.m in Sources */,
+				D05C823F1C82E1A800C91C46 /* XQZUserCell.m in Sources */,
 				D03E386A1C786635000AADE2 /* main.m in Sources */,
+				D089032B1C81941B00BCED4C /* XQZCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,30 +636,38 @@
 		};
 		D09F9C721C59242400D36083 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62508A2C4632A47B7260D65B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "~/PuzzledSister/PuzzledSister/PuzzledSister/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = PuzzledSister/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.PuzzledSister;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D09F9C731C59242400D36083 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60287EF256A97A22237EAF1A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "~/PuzzledSister/PuzzledSister/PuzzledSister/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = PuzzledSister/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.PuzzledSister;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

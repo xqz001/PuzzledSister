@@ -44,7 +44,7 @@
     NSInteger count = 0;
     
     for (UIView *view in self.subviews) {
-        NSLog(@"===%@",view);
+        MYLog(@"===%@",view);
         if ([view isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
             x = width *count;
             if (count >= 2) {
