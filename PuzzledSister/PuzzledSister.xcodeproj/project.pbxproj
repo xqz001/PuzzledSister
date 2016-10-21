@@ -25,6 +25,38 @@
 		D05C823B1C82D3F500C91C46 /* XQZCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05C82391C82D3F500C91C46 /* XQZCategoryCell.xib */; };
 		D05C823F1C82E1A800C91C46 /* XQZUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D05C823D1C82E1A800C91C46 /* XQZUserCell.m */; };
 		D05C82401C82E1A800C91C46 /* XQZUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05C823E1C82E1A800C91C46 /* XQZUserCell.xib */; };
+		D088B1C21CAD7F1B00ECD12E /* XQZTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DE21E81C7F4CE6006D06C5 /* XQZTestViewController.m */; };
+		D088B1C31CAD7F1B00ECD12E /* XQZAttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03E38871C786838000AADE2 /* XQZAttentionViewController.m */; };
+		D088B1C41CAD7F1B00ECD12E /* XQZRecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D00B7CF71C9072E300ACF88A /* XQZRecommendModel.m */; };
+		D088B1C51CAD7F1B00ECD12E /* XQZRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D00B7CF21C90612C00ACF88A /* XQZRecommendCell.m */; };
+		D088B1C61CAD7F1B00ECD12E /* XQZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B154591C9ECE2000049206 /* XQZLoginViewController.m */; };
+		D088B1C71CAD7F1B00ECD12E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D03E38601C78656F000AADE2 /* AppDelegate.m */; };
+		D088B1C81CAD7F1B00ECD12E /* XQZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03E38931C786838000AADE2 /* XQZTabBarController.m */; };
+		D088B1C91CAD7F1B00ECD12E /* XQZUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D089032D1C82189100BCED4C /* XQZUser.m */; };
+		D088B1CA1CAD7F1B00ECD12E /* XQZBestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03E388D1C786838000AADE2 /* XQZBestViewController.m */; };
+		D088B1CB1CAD7F1B00ECD12E /* UIView+XQZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D097F7C61C7CC16B004033F6 /* UIView+XQZExtension.m */; };
+		D088B1CC1CAD7F1B00ECD12E /* XQZMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03E38991C786838000AADE2 /* XQZMeViewController.m */; };
+		D088B1CD1CAD7F1B00ECD12E /* XQZNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DE21E51C7F3190006D06C5 /* XQZNavigationViewController.m */; };
+		D088B1CE1CAD7F1B00ECD12E /* UIBarButtonItem+XQZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D092BF761C7CB0B1008E7019 /* UIBarButtonItem+XQZExtension.m */; };
+		D088B1CF1CAD7F1B00ECD12E /* XQZRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00B7CEF1C90604D00ACF88A /* XQZRecommendViewController.m */; };
+		D088B1D01CAD7F1B00ECD12E /* XQZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D03E38A81C7869DF000AADE2 /* XQZTabBar.m */; };
+		D088B1D11CAD7F1B00ECD12E /* XQZNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03E389F1C786838000AADE2 /* XQZNewViewController.m */; };
+		D088B1D21CAD7F1B00ECD12E /* XQZUserGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DE0C3D1C88950300388C7A /* XQZUserGroup.m */; };
+		D088B1D31CAD7F1B00ECD12E /* XQZFriendThrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D08903251C81885300BCED4C /* XQZFriendThrendsViewController.m */; };
+		D088B1D41CAD7F1B00ECD12E /* XQZCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D05C82381C82D3F500C91C46 /* XQZCategoryCell.m */; };
+		D088B1D51CAD7F1B00ECD12E /* XQZUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D05C823D1C82E1A800C91C46 /* XQZUserCell.m */; };
+		D088B1D61CAD7F1B00ECD12E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D03E38681C786635000AADE2 /* main.m */; };
+		D088B1D71CAD7F1B00ECD12E /* XQZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D089032A1C81941B00BCED4C /* XQZCategory.m */; };
+		D088B1D91CAD7F1B00ECD12E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E0D79E49D84B5050D07FDF /* libPods.a */; };
+		D088B1DB1CAD7F1B00ECD12E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09F9C6B1C59242400D36083 /* LaunchScreen.storyboard */; };
+		D088B1DC1CAD7F1B00ECD12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09F9C691C59242400D36083 /* Assets.xcassets */; };
+		D088B1DD1CAD7F1B00ECD12E /* XQZRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D00B7CF31C90612C00ACF88A /* XQZRecommendCell.xib */; };
+		D088B1DE1CAD7F1B00ECD12E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D03E38671C786635000AADE2 /* Info.plist */; };
+		D088B1DF1CAD7F1B00ECD12E /* XQZAttentionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D08903221C809A3300BCED4C /* XQZAttentionViewController.xib */; };
+		D088B1E01CAD7F1B00ECD12E /* XQZFriendThrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D08903261C81885300BCED4C /* XQZFriendThrendsViewController.xib */; };
+		D088B1E11CAD7F1B00ECD12E /* XQZUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05C823E1C82E1A800C91C46 /* XQZUserCell.xib */; };
+		D088B1E21CAD7F1B00ECD12E /* XQZCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05C82391C82D3F500C91C46 /* XQZCategoryCell.xib */; };
+		D088B1E31CAD7F1B00ECD12E /* XQZLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B1545A1C9ECE2000049206 /* XQZLoginViewController.xib */; };
 		D08903231C809A3300BCED4C /* XQZAttentionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D08903221C809A3300BCED4C /* XQZAttentionViewController.xib */; };
 		D08903271C81885300BCED4C /* XQZFriendThrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D08903251C81885300BCED4C /* XQZFriendThrendsViewController.m */; };
 		D08903281C81885300BCED4C /* XQZFriendThrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D08903261C81885300BCED4C /* XQZFriendThrendsViewController.xib */; };
@@ -74,6 +106,8 @@
 		D05C823C1C82E1A800C91C46 /* XQZUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZUserCell.h; sourceTree = "<group>"; };
 		D05C823D1C82E1A800C91C46 /* XQZUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZUserCell.m; sourceTree = "<group>"; };
 		D05C823E1C82E1A800C91C46 /* XQZUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XQZUserCell.xib; sourceTree = "<group>"; };
+		D088B1E81CAD7F1B00ECD12E /* PuzzledSister Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PuzzledSister Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D088B1E91CAD7F1B00ECD12E /* PuzzledSister Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PuzzledSister Dev-Info.plist"; path = "/Users/liwei/PuzzledSister/PuzzledSister/PuzzledSister Dev-Info.plist"; sourceTree = "<absolute>"; };
 		D08903221C809A3300BCED4C /* XQZAttentionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XQZAttentionViewController.xib; sourceTree = "<group>"; };
 		D08903241C81885300BCED4C /* XQZFriendThrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZFriendThrendsViewController.h; sourceTree = "<group>"; };
 		D08903251C81885300BCED4C /* XQZFriendThrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZFriendThrendsViewController.m; sourceTree = "<group>"; };
@@ -102,6 +136,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D088B1D81CAD7F1B00ECD12E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D088B1D91CAD7F1B00ECD12E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D09F9C571C59242400D36083 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -368,6 +410,7 @@
 				D09F9C5B1C59242400D36083 /* Products */,
 				2DCCF9D2A5D00C3148AEB23C /* Pods */,
 				52271F4D1BCEFF4B05062B6D /* Frameworks */,
+				D088B1E91CAD7F1B00ECD12E /* PuzzledSister Dev-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -375,6 +418,7 @@
 			isa = PBXGroup;
 			children = (
 				D09F9C5A1C59242400D36083 /* PuzzledSister.app */,
+				D088B1E81CAD7F1B00ECD12E /* PuzzledSister Dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -403,6 +447,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D088B1BF1CAD7F1B00ECD12E /* PuzzledSister Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D088B1E51CAD7F1B00ECD12E /* Build configuration list for PBXNativeTarget "PuzzledSister Dev" */;
+			buildPhases = (
+				D088B1C01CAD7F1B00ECD12E /* Check Pods Manifest.lock */,
+				D088B1C11CAD7F1B00ECD12E /* Sources */,
+				D088B1D81CAD7F1B00ECD12E /* Frameworks */,
+				D088B1DA1CAD7F1B00ECD12E /* Resources */,
+				D088B1E41CAD7F1B00ECD12E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PuzzledSister Dev";
+			productName = PuzzledSister;
+			productReference = D088B1E81CAD7F1B00ECD12E /* PuzzledSister Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
 		D09F9C591C59242400D36083 /* PuzzledSister */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D09F9C711C59242400D36083 /* Build configuration list for PBXNativeTarget "PuzzledSister" */;
@@ -432,6 +495,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = liwei;
 				TargetAttributes = {
+					D088B1BF1CAD7F1B00ECD12E = {
+						ProvisioningStyle = Manual;
+					};
 					D09F9C591C59242400D36083 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = D49HWBNX5M;
@@ -452,11 +518,28 @@
 			projectRoot = "";
 			targets = (
 				D09F9C591C59242400D36083 /* PuzzledSister */,
+				D088B1BF1CAD7F1B00ECD12E /* PuzzledSister Dev */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D088B1DA1CAD7F1B00ECD12E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D088B1DB1CAD7F1B00ECD12E /* LaunchScreen.storyboard in Resources */,
+				D088B1DC1CAD7F1B00ECD12E /* Assets.xcassets in Resources */,
+				D088B1DD1CAD7F1B00ECD12E /* XQZRecommendCell.xib in Resources */,
+				D088B1DE1CAD7F1B00ECD12E /* Info.plist in Resources */,
+				D088B1DF1CAD7F1B00ECD12E /* XQZAttentionViewController.xib in Resources */,
+				D088B1E01CAD7F1B00ECD12E /* XQZFriendThrendsViewController.xib in Resources */,
+				D088B1E11CAD7F1B00ECD12E /* XQZUserCell.xib in Resources */,
+				D088B1E21CAD7F1B00ECD12E /* XQZCategoryCell.xib in Resources */,
+				D088B1E31CAD7F1B00ECD12E /* XQZLoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D09F9C581C59242400D36083 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -506,9 +589,68 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		D088B1C01CAD7F1B00ECD12E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D088B1E41CAD7F1B00ECD12E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D088B1C11CAD7F1B00ECD12E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D088B1C21CAD7F1B00ECD12E /* XQZTestViewController.m in Sources */,
+				D088B1C31CAD7F1B00ECD12E /* XQZAttentionViewController.m in Sources */,
+				D088B1C41CAD7F1B00ECD12E /* XQZRecommendModel.m in Sources */,
+				D088B1C51CAD7F1B00ECD12E /* XQZRecommendCell.m in Sources */,
+				D088B1C61CAD7F1B00ECD12E /* XQZLoginViewController.m in Sources */,
+				D088B1C71CAD7F1B00ECD12E /* AppDelegate.m in Sources */,
+				D088B1C81CAD7F1B00ECD12E /* XQZTabBarController.m in Sources */,
+				D088B1C91CAD7F1B00ECD12E /* XQZUser.m in Sources */,
+				D088B1CA1CAD7F1B00ECD12E /* XQZBestViewController.m in Sources */,
+				D088B1CB1CAD7F1B00ECD12E /* UIView+XQZExtension.m in Sources */,
+				D088B1CC1CAD7F1B00ECD12E /* XQZMeViewController.m in Sources */,
+				D088B1CD1CAD7F1B00ECD12E /* XQZNavigationViewController.m in Sources */,
+				D088B1CE1CAD7F1B00ECD12E /* UIBarButtonItem+XQZExtension.m in Sources */,
+				D088B1CF1CAD7F1B00ECD12E /* XQZRecommendViewController.m in Sources */,
+				D088B1D01CAD7F1B00ECD12E /* XQZTabBar.m in Sources */,
+				D088B1D11CAD7F1B00ECD12E /* XQZNewViewController.m in Sources */,
+				D088B1D21CAD7F1B00ECD12E /* XQZUserGroup.m in Sources */,
+				D088B1D31CAD7F1B00ECD12E /* XQZFriendThrendsViewController.m in Sources */,
+				D088B1D41CAD7F1B00ECD12E /* XQZCategoryCell.m in Sources */,
+				D088B1D51CAD7F1B00ECD12E /* XQZUserCell.m in Sources */,
+				D088B1D61CAD7F1B00ECD12E /* main.m in Sources */,
+				D088B1D71CAD7F1B00ECD12E /* XQZCategory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D09F9C561C59242400D36083 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -552,6 +694,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D088B1E61CAD7F1B00ECD12E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62508A2C4632A47B7260D65B /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "~/PuzzledSister/PuzzledSister/PuzzledSister/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = "PuzzledSister Dev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.PuzzledSister-Dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D088B1E71CAD7F1B00ECD12E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60287EF256A97A22237EAF1A /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "~/PuzzledSister/PuzzledSister/PuzzledSister/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = "PuzzledSister Dev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.PuzzledSister-Dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		D09F9C6F1C59242400D36083 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -675,6 +857,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D088B1E51CAD7F1B00ECD12E /* Build configuration list for PBXNativeTarget "PuzzledSister Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D088B1E61CAD7F1B00ECD12E /* Debug */,
+				D088B1E71CAD7F1B00ECD12E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D09F9C551C59242400D36083 /* Build configuration list for PBXProject "PuzzledSister" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

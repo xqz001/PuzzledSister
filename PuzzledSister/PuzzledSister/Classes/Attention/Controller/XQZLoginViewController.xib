@@ -24,13 +24,13 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_register_background" translatesAutoresizingMaskIntoConstraints="NO" id="KGj-7Q-NYu">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaJ-cu-DJ2">
-                    <rect key="frame" x="20" y="40" width="16" height="16"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaJ-cu-DJ2">
+                    <rect key="frame" x="20" y="40" width="30" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="16" id="de5-MR-ZEq"/>
-                        <constraint firstAttribute="width" constant="16" id="o5p-Qz-NsH"/>
+                        <constraint firstAttribute="height" constant="30" id="de5-MR-ZEq"/>
+                        <constraint firstAttribute="width" constant="30" id="o5p-Qz-NsH"/>
                     </constraints>
-                    <state key="normal" backgroundImage="login_close_icon"/>
+                    <state key="normal" image="login_close_icon"/>
                     <connections>
                         <action selector="loginBtnClose:" destination="-1" eventType="touchUpInside" id="Ajd-GF-PzR"/>
                     </connections>

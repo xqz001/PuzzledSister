@@ -10,10 +10,18 @@
 #import "XQZRecommendCell.h"
 
 @interface XQZRecommendViewController ()
-
+@property (nonatomic, strong) NSMutableArray *dates; /**<  */
 @end
 
 @implementation XQZRecommendViewController
+
+- (NSMutableArray *)dates {
+    if (_dates == nil) {
+        _dates = [NSMutableArray array];
+    }
+    
+    return _dates;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,6 +36,12 @@
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     // 注册cell
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XQZRecommendCell class]) bundle:nil] forCellReuseIdentifier:@"recommendCell"];
+    
+    for (int i = 0; i < 10; i++) {
+        NSString *str = [NSString stringWithFormat:@"第%d行",i];
+        [self.dates addObject:str];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,18 +53,18 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 10;
+    return self.dates.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     XQZRecommendCell *cell = [tableView dequeueReusableCellWithIdentifier:@"recommendCell"];
     
-    cell.nameLabel.text = [NSString stringWithFormat:@"第%ld行",indexPath.row];
+    NSString *str = self.dates[indexPath.row];
+    
+    cell.nameLabel.text = str;
     
     return cell;
 }
-
-
 
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -64,6 +78,7 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
+        [self.dates removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
