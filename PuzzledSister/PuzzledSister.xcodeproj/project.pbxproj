@@ -496,6 +496,7 @@
 				ORGANIZATIONNAME = liwei;
 				TargetAttributes = {
 					D088B1BF1CAD7F1B00ECD12E = {
+						DevelopmentTeam = AHRJ6ZJEZ4;
 						ProvisioningStyle = Manual;
 					};
 					D09F9C591C59242400D36083 = {
@@ -702,14 +703,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AHRJ6ZJEZ4;
 				GCC_PREFIX_HEADER = "~/PuzzledSister/PuzzledSister/PuzzledSister/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "PuzzledSister Dev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.PuzzledSister-Dev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "bbd5bd2c-102b-4adf-bb3b-9c42813626e9";
+				PROVISIONING_PROFILE_SPECIFIER = generalID;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;

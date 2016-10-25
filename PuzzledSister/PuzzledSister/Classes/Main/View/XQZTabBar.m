@@ -35,7 +35,7 @@
     [super layoutSubviews];
     
     self.button.frame = CGRectMake(0, 0, self.button.currentBackgroundImage.size.width, self.button.currentBackgroundImage.size.height);
-    self.button.center = CGPointMake(self.frame.size.width * 0.5, self.frame.size.height * 0.5);
+    self.button.center = CGPointMake(self.frame.size.width * 0.5, self.frame.size.height * 0.5 + 2);
     
     CGFloat x = 0;
     CGFloat y = 0;
@@ -44,7 +44,7 @@
     NSInteger count = 0;
     
     for (UIView *view in self.subviews) {
-        MYLog(@"===%@",view);
+//        MYLog(@"===%@",view);
         if ([view isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
             x = width *count;
             if (count >= 2) {

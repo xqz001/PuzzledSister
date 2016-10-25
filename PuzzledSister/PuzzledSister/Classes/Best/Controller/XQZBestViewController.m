@@ -16,6 +16,9 @@
 @property (nonatomic, strong) NSArray *titles; /**< 标题数组 */
 @property (nonatomic, weak) UIScrollView *titlesScrollView; /**< 标题滚动试图 */
 @property (nonatomic, weak) UIScrollView *contentScrollView; /**< 内容滚动视图 */
+@property (nonatomic, weak) UIButton *selectedButton; /**< 选中的按钮 */
+@property (nonatomic, weak) UIView *indiretorView; /**< 选中的按钮 */
+
 
 @end
 
@@ -55,7 +58,7 @@
      */
     UITableViewController *vc1 = [[UITableViewController alloc] init];
     vc1.title = @"头条";
-    vc1.view.backgroundColor = [UIColor blueColor];
+    vc1.view.backgroundColor = [UIColor redColor];
     [self addChildViewController:vc1];
     
     UITableViewController *vc2 = [[UITableViewController alloc] init];
@@ -68,6 +71,16 @@
     vc3.view.backgroundColor = [UIColor lightGrayColor];
     [self addChildViewController:vc3];
     
+    UITableViewController *vc4 = [[UITableViewController alloc] init];
+    vc4.title = @"视频";
+    vc4.view.backgroundColor = [UIColor lightGrayColor];
+    [self addChildViewController:vc4];
+    
+    UITableViewController *vc5 = [[UITableViewController alloc] init];
+    vc5.title = @"图片";
+    vc5.view.backgroundColor = [UIColor lightGrayColor];
+    [self addChildViewController:vc5];
+    
 }
 
 /**
@@ -78,9 +91,49 @@
     // 标题视图
     UIScrollView *scrollView = [[UIScrollView alloc] init];
     self.titlesScrollView = scrollView;
-    scrollView.frame = CGRectMake(0, 64, self.view.frame.size.width, 44);
-    scrollView.backgroundColor = [UIColor redColor];
+    CGFloat scrollViewHeigth = 44;
+    scrollView.frame = CGRectMake(0, 64, self.view.frame.size.width, scrollViewHeigth);
+//    scrollView.backgroundColor = [UIColor redColor];
     [self.view addSubview:scrollView];
+    
+    NSInteger count = self.childViewControllers.count;
+    CGFloat btnWidth = self.view.frame.size.width / count;
+    
+    for (int i = 0; i < count; i++) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectMake(btnWidth * i, 0, btnWidth, 44);
+        
+        NSString *title = self.childViewControllers[i].title;
+        
+        [button setTitle:title forState:UIControlStateNormal];
+        button.titleLabel.font = [UIFont systemFontOfSize:15];
+        [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor redColor] forState:UIControlStateDisabled];
+        [button addTarget:self action:@selector(titleBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+        
+        if (i == 0) {
+            button.enabled = NO;
+            self.selectedButton = button;
+        }
+        
+        [scrollView addSubview:button];
+    }
+    
+    // 标题底部指示器
+    UIView *titleIndiretorView = [[UIView alloc] init];
+    titleIndiretorView.backgroundColor = [UIColor redColor];
+    self.indiretorView = titleIndiretorView;
+    
+    // 设置标题底部指示器的frame
+    CGFloat titleIndiretorViewHeigth = 2;
+    CGFloat titleIndiretorViewWidth = [self.childViewControllers[0].title sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15]}].width;
+    titleIndiretorView.frame = CGRectMake(0, scrollViewHeigth - titleIndiretorViewHeigth, titleIndiretorViewWidth, titleIndiretorViewHeigth);
+    CGPoint btnCenter = self.selectedButton.center;
+    btnCenter.y = titleIndiretorView.center.y;
+    titleIndiretorView.center = btnCenter;
+    
+    [scrollView addSubview:titleIndiretorView];
+    
     
     // 内容视图
     UIScrollView *contentScrollView = [[UIScrollView alloc] init];
@@ -89,10 +142,12 @@
     contentScrollView.delegate = self;
     contentScrollView.frame = CGRectMake(0, CGRectGetMaxY(scrollView.frame), self.view.frame.size.width, self.view.frame.size.height - CGRectGetMaxY(scrollView.frame));
     contentScrollView.backgroundColor = [UIColor yellowColor];
+    contentScrollView.pagingEnabled = YES;
+//    contentScrollView.showsHorizontalScrollIndicator = NO;
     [self.view addSubview:contentScrollView];
     
     // 将第一个子控制器的View加上去
-    [self scrollViewDidEndScrollingAnimation:self.contentScrollView];
+//    [self scrollViewDidEndScrollingAnimation:self.contentScrollView];
 }
 
 /**
@@ -120,22 +175,42 @@
     [self.navigationController pushViewController:recommendVc animated:YES];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    
-}
-
 #pragma mark - UIScrollViewDelegate
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
     
-//    NSInteger i = scrollView.contentSize.width / self.view.frame.size.width - 1;
-//    
-//    UIViewController *vc = self.childViewControllers[i];
-//    vc.view.frame = CGRectMake(i * self.view.frame.size.width, 0, scrollView.frame.size.width, scrollView.frame.size.height);
-//    
-//    [scrollView addSubview:vc.view];
+    NSInteger i = scrollView.contentSize.width / self.view.frame.size.width - 1;
+    
+    NSLog(@"=====%ld",i);
+    
+    
+    UIViewController *vc = self.childViewControllers[i];
+    vc.view.frame = CGRectMake(i * self.view.frame.size.width, 0, scrollView.frame.size.width, scrollView.frame.size.height);
+    
+    [scrollView addSubview:vc.view];
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+ 
+    NSInteger i = scrollView.contentOffset.x / self.view.frame.size.width;
+    
+    NSLog(@"=====%ld",i);
+}
+
+#pragma mark - 标题按钮的点击事件
+- (void)titleBtnClick:(UIButton *)button {
+    self.selectedButton.enabled = YES;
+    button.enabled = NO;
+    self.selectedButton = button;
+    
+    // 执行动画
+    [UIView animateWithDuration:0.25 animations:^{
+        
+        CGPoint btnCenter = self.selectedButton.center;
+        btnCenter.y = self.indiretorView.center.y;
+        self.indiretorView.center = btnCenter;
+    }];
+    
+}
 
 @end
