@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XQZTestViewController : UIViewController
+@interface XQZTestViewController : UITableViewController
 
 @end

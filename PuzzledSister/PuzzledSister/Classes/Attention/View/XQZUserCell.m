@@ -21,6 +21,7 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    [super awakeFromNib];
 }
 
 - (void)setUser:(XQZUser *)user {

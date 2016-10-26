@@ -18,15 +18,28 @@
 @property (nonatomic, weak) UIScrollView *contentScrollView; /**< 内容滚动视图 */
 @property (nonatomic, weak) UIButton *selectedButton; /**< 选中的按钮 */
 @property (nonatomic, weak) UIView *indiretorView; /**< 选中的按钮 */
+@property (nonatomic, strong) NSMutableArray *titleButtonsArray; /**< 选中的按钮 */
 
 
 @end
 
 @implementation XQZBestViewController
 
+#pragma mark - 懒加载
+- (NSMutableArray *)titleButtonsArray {
+    if (_titleButtonsArray == nil) {
+        _titleButtonsArray = [NSMutableArray array];
+    }
+    
+    return _titleButtonsArray;
+}
+
+#pragma mark - 生命周期方法
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     self.view.backgroundColor = GlobalBgColor;
     
@@ -56,29 +69,29 @@
      
      这里采用第一种方法
      */
-    UITableViewController *vc1 = [[UITableViewController alloc] init];
+    XQZTestViewController *vc1 = [[XQZTestViewController alloc] init];
     vc1.title = @"头条";
     vc1.view.backgroundColor = [UIColor redColor];
     [self addChildViewController:vc1];
     
-    UITableViewController *vc2 = [[UITableViewController alloc] init];
+    XQZTestViewController *vc2 = [[XQZTestViewController alloc] init];
     vc2.title = @"娱乐";
     vc2.view.backgroundColor = [UIColor purpleColor];
     [self addChildViewController:vc2];
 
-    UITableViewController *vc3 = [[UITableViewController alloc] init];
+    XQZTestViewController *vc3 = [[XQZTestViewController alloc] init];
     vc3.title = @"段子";
     vc3.view.backgroundColor = [UIColor lightGrayColor];
     [self addChildViewController:vc3];
     
-    UITableViewController *vc4 = [[UITableViewController alloc] init];
+    XQZTestViewController *vc4 = [[XQZTestViewController alloc] init];
     vc4.title = @"视频";
-    vc4.view.backgroundColor = [UIColor lightGrayColor];
+    vc4.view.backgroundColor = [UIColor blueColor];
     [self addChildViewController:vc4];
     
-    UITableViewController *vc5 = [[UITableViewController alloc] init];
+    XQZTestViewController *vc5 = [[XQZTestViewController alloc] init];
     vc5.title = @"图片";
-    vc5.view.backgroundColor = [UIColor lightGrayColor];
+    vc5.view.backgroundColor = [UIColor brownColor];
     [self addChildViewController:vc5];
     
 }
@@ -116,6 +129,8 @@
             self.selectedButton = button;
         }
         
+        [self.titleButtonsArray addObject:button];
+        
         [scrollView addSubview:button];
     }
     
@@ -134,7 +149,6 @@
     
     [scrollView addSubview:titleIndiretorView];
     
-    
     // 内容视图
     UIScrollView *contentScrollView = [[UIScrollView alloc] init];
     self.contentScrollView = contentScrollView;
@@ -147,7 +161,7 @@
     [self.view addSubview:contentScrollView];
     
     // 将第一个子控制器的View加上去
-//    [self scrollViewDidEndScrollingAnimation:self.contentScrollView];
+    [self scrollViewDidEndScrollingAnimation:self.contentScrollView];
 }
 
 /**
@@ -179,26 +193,26 @@
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
     
-    NSInteger i = scrollView.contentSize.width / self.view.frame.size.width - 1;
+    // 获取按钮的索引，即子控制器的索引
+    NSInteger index = [self.titleButtonsArray indexOfObject:self.selectedButton];
     
-    NSLog(@"=====%ld",i);
+    UITableViewController *vc = self.childViewControllers[index];
+    vc.view.frame = CGRectMake(index * self.view.frame.size.width, 0, scrollView.frame.size.width, scrollView.frame.size.height);
+    vc.tableView.contentInset = UIEdgeInsetsMake(0, 0, 49, 0);
     
+    if (![scrollView.subviews containsObject:vc.view]) {
+        
+        [scrollView addSubview:vc.view];
+    }
     
-    UIViewController *vc = self.childViewControllers[i];
-    vc.view.frame = CGRectMake(i * self.view.frame.size.width, 0, scrollView.frame.size.width, scrollView.frame.size.height);
-    
-    [scrollView addSubview:vc.view];
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
- 
-    NSInteger i = scrollView.contentOffset.x / self.view.frame.size.width;
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    NSLog(@"================");
     
-    NSLog(@"=====%ld",i);
-}
-
-#pragma mark - 标题按钮的点击事件
-- (void)titleBtnClick:(UIButton *)button {
+    NSInteger index = scrollView.contentOffset.x / self.view.frame.size.width;
+    UIButton *button = self.titleButtonsArray[index];
+    
     self.selectedButton.enabled = YES;
     button.enabled = NO;
     self.selectedButton = button;
@@ -211,6 +225,62 @@
         self.indiretorView.center = btnCenter;
     }];
     
+    UITableViewController *vc = self.childViewControllers[index];
+    vc.view.frame = CGRectMake(index * self.view.frame.size.width, 0, scrollView.frame.size.width, scrollView.frame.size.height);
+    vc.tableView.contentInset = UIEdgeInsetsMake(0, 0, 49, 0);
+    
+    if (![scrollView.subviews containsObject:vc.view]) {
+        
+        [scrollView addSubview:vc.view];
+    }
+}
+
+#pragma mark - 标题按钮的点击事件
+- (void)titleBtnClick:(UIButton *)button {
+    
+    self.selectedButton.enabled = YES;
+    button.enabled = NO;
+    self.selectedButton = button;
+    
+    // 执行动画
+    [UIView animateWithDuration:0.25 animations:^{
+        
+        CGPoint btnCenter = self.selectedButton.center;
+        btnCenter.y = self.indiretorView.center.y;
+        self.indiretorView.center = btnCenter;
+    }];
+    
+    NSInteger buttonIndex = [self.titleButtonsArray indexOfObject:button];
+    CGPoint offset = CGPointMake(buttonIndex * self.view.frame.size.width, 0);
+    
+    // 设置contentScrollView的偏移量
+    [self.contentScrollView setContentOffset:offset animated:YES];
 }
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
