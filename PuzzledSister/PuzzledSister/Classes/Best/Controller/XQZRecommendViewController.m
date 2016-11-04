@@ -7,6 +7,7 @@
 //
 
 #import "XQZRecommendViewController.h"
+
 #import "XQZRecommendCell.h"
 
 @interface XQZRecommendViewController ()

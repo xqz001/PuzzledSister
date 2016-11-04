@@ -21,10 +21,16 @@
 		D03E38A51C786838000AADE2 /* XQZMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03E38991C786838000AADE2 /* XQZMeViewController.m */; };
 		D03E38A61C786838000AADE2 /* XQZNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03E389F1C786838000AADE2 /* XQZNewViewController.m */; };
 		D03E38A91C7869DF000AADE2 /* XQZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D03E38A81C7869DF000AADE2 /* XQZTabBar.m */; };
+		D053A9821DC7893F00BF0F0B /* XQZWorldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D053A9801DC7893F00BF0F0B /* XQZWorldTableViewCell.m */; };
+		D053A9831DC7893F00BF0F0B /* XQZWorldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D053A9811DC7893F00BF0F0B /* XQZWorldTableViewCell.xib */; };
 		D05C823A1C82D3F500C91C46 /* XQZCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D05C82381C82D3F500C91C46 /* XQZCategoryCell.m */; };
 		D05C823B1C82D3F500C91C46 /* XQZCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05C82391C82D3F500C91C46 /* XQZCategoryCell.xib */; };
 		D05C823F1C82E1A800C91C46 /* XQZUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D05C823D1C82E1A800C91C46 /* XQZUserCell.m */; };
 		D05C82401C82E1A800C91C46 /* XQZUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05C823E1C82E1A800C91C46 /* XQZUserCell.xib */; };
+		D069B6531DC48595007AB85D /* XQZWorldTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D069B6521DC48595007AB85D /* XQZWorldTableViewController.m */; };
+		D069B6561DC4A029007AB85D /* XQZWorldInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D069B6551DC4A029007AB85D /* XQZWorldInfo.m */; };
+		D069B6591DC4A174007AB85D /* XQZWorldModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D069B6581DC4A174007AB85D /* XQZWorldModel.m */; };
+		D069B65C1DC4A2B9007AB85D /* XQZTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = D069B65B1DC4A2B9007AB85D /* XQZTopic.m */; };
 		D088B1C21CAD7F1B00ECD12E /* XQZTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DE21E81C7F4CE6006D06C5 /* XQZTestViewController.m */; };
 		D088B1C31CAD7F1B00ECD12E /* XQZAttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03E38871C786838000AADE2 /* XQZAttentionViewController.m */; };
 		D088B1C41CAD7F1B00ECD12E /* XQZRecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D00B7CF71C9072E300ACF88A /* XQZRecommendModel.m */; };
@@ -100,12 +106,23 @@
 		D03E389F1C786838000AADE2 /* XQZNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZNewViewController.m; sourceTree = "<group>"; };
 		D03E38A71C7869DF000AADE2 /* XQZTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZTabBar.h; sourceTree = "<group>"; };
 		D03E38A81C7869DF000AADE2 /* XQZTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZTabBar.m; sourceTree = "<group>"; };
+		D053A97F1DC7893F00BF0F0B /* XQZWorldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZWorldTableViewCell.h; sourceTree = "<group>"; };
+		D053A9801DC7893F00BF0F0B /* XQZWorldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZWorldTableViewCell.m; sourceTree = "<group>"; };
+		D053A9811DC7893F00BF0F0B /* XQZWorldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XQZWorldTableViewCell.xib; sourceTree = "<group>"; };
 		D05C82371C82D3F500C91C46 /* XQZCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZCategoryCell.h; sourceTree = "<group>"; };
 		D05C82381C82D3F500C91C46 /* XQZCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZCategoryCell.m; sourceTree = "<group>"; };
 		D05C82391C82D3F500C91C46 /* XQZCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XQZCategoryCell.xib; sourceTree = "<group>"; };
 		D05C823C1C82E1A800C91C46 /* XQZUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZUserCell.h; sourceTree = "<group>"; };
 		D05C823D1C82E1A800C91C46 /* XQZUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZUserCell.m; sourceTree = "<group>"; };
 		D05C823E1C82E1A800C91C46 /* XQZUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XQZUserCell.xib; sourceTree = "<group>"; };
+		D069B6511DC48595007AB85D /* XQZWorldTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZWorldTableViewController.h; sourceTree = "<group>"; };
+		D069B6521DC48595007AB85D /* XQZWorldTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZWorldTableViewController.m; sourceTree = "<group>"; };
+		D069B6541DC4A029007AB85D /* XQZWorldInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZWorldInfo.h; sourceTree = "<group>"; };
+		D069B6551DC4A029007AB85D /* XQZWorldInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZWorldInfo.m; sourceTree = "<group>"; };
+		D069B6571DC4A174007AB85D /* XQZWorldModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZWorldModel.h; sourceTree = "<group>"; };
+		D069B6581DC4A174007AB85D /* XQZWorldModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZWorldModel.m; sourceTree = "<group>"; };
+		D069B65A1DC4A2B9007AB85D /* XQZTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZTopic.h; sourceTree = "<group>"; };
+		D069B65B1DC4A2B9007AB85D /* XQZTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZTopic.m; sourceTree = "<group>"; };
 		D088B1E81CAD7F1B00ECD12E /* PuzzledSister Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PuzzledSister Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D088B1E91CAD7F1B00ECD12E /* PuzzledSister Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PuzzledSister Dev-Info.plist"; path = "/Users/liwei/PuzzledSister/PuzzledSister/PuzzledSister Dev-Info.plist"; sourceTree = "<absolute>"; };
 		D08903221C809A3300BCED4C /* XQZAttentionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XQZAttentionViewController.xib; sourceTree = "<group>"; };
@@ -266,6 +283,8 @@
 				D03E388D1C786838000AADE2 /* XQZBestViewController.m */,
 				D00B7CEE1C90604D00ACF88A /* XQZRecommendViewController.h */,
 				D00B7CEF1C90604D00ACF88A /* XQZRecommendViewController.m */,
+				D069B6511DC48595007AB85D /* XQZWorldTableViewController.h */,
+				D069B6521DC48595007AB85D /* XQZWorldTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,8 +292,14 @@
 		D03E388E1C786838000AADE2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D069B6571DC4A174007AB85D /* XQZWorldModel.h */,
+				D069B6581DC4A174007AB85D /* XQZWorldModel.m */,
+				D069B65A1DC4A2B9007AB85D /* XQZTopic.h */,
+				D069B65B1DC4A2B9007AB85D /* XQZTopic.m */,
 				D00B7CF61C9072E300ACF88A /* XQZRecommendModel.h */,
 				D00B7CF71C9072E300ACF88A /* XQZRecommendModel.m */,
+				D069B6541DC4A029007AB85D /* XQZWorldInfo.h */,
+				D069B6551DC4A029007AB85D /* XQZWorldInfo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -285,6 +310,9 @@
 				D00B7CF11C90612C00ACF88A /* XQZRecommendCell.h */,
 				D00B7CF21C90612C00ACF88A /* XQZRecommendCell.m */,
 				D00B7CF31C90612C00ACF88A /* XQZRecommendCell.xib */,
+				D053A97F1DC7893F00BF0F0B /* XQZWorldTableViewCell.h */,
+				D053A9801DC7893F00BF0F0B /* XQZWorldTableViewCell.m */,
+				D053A9811DC7893F00BF0F0B /* XQZWorldTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -501,7 +529,8 @@
 					};
 					D09F9C591C59242400D36083 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = D49HWBNX5M;
+						DevelopmentTeam = AHRJ6ZJEZ4;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -549,6 +578,7 @@
 				D09F9C6A1C59242400D36083 /* Assets.xcassets in Resources */,
 				D00B7CF51C90612C00ACF88A /* XQZRecommendCell.xib in Resources */,
 				D03E38691C786635000AADE2 /* Info.plist in Resources */,
+				D053A9831DC7893F00BF0F0B /* XQZWorldTableViewCell.xib in Resources */,
 				D08903231C809A3300BCED4C /* XQZAttentionViewController.xib in Resources */,
 				D08903281C81885300BCED4C /* XQZFriendThrendsViewController.xib in Resources */,
 				D05C82401C82E1A800C91C46 /* XQZUserCell.xib in Resources */,
@@ -661,21 +691,26 @@
 				D00B7CF81C9072E300ACF88A /* XQZRecommendModel.m in Sources */,
 				D00B7CF41C90612C00ACF88A /* XQZRecommendCell.m in Sources */,
 				D0B1545B1C9ECE2000049206 /* XQZLoginViewController.m in Sources */,
+				D053A9821DC7893F00BF0F0B /* XQZWorldTableViewCell.m in Sources */,
 				D03E38631C78656F000AADE2 /* AppDelegate.m in Sources */,
 				D03E38A41C786838000AADE2 /* XQZTabBarController.m in Sources */,
 				D089032E1C82189100BCED4C /* XQZUser.m in Sources */,
+				D069B6561DC4A029007AB85D /* XQZWorldInfo.m in Sources */,
 				D03E38A31C786838000AADE2 /* XQZBestViewController.m in Sources */,
 				D097F7C71C7CC16B004033F6 /* UIView+XQZExtension.m in Sources */,
 				D03E38A51C786838000AADE2 /* XQZMeViewController.m in Sources */,
 				D0DE21E61C7F3190006D06C5 /* XQZNavigationViewController.m in Sources */,
 				D092BF771C7CB0B1008E7019 /* UIBarButtonItem+XQZExtension.m in Sources */,
 				D00B7CF01C90604D00ACF88A /* XQZRecommendViewController.m in Sources */,
+				D069B6591DC4A174007AB85D /* XQZWorldModel.m in Sources */,
 				D03E38A91C7869DF000AADE2 /* XQZTabBar.m in Sources */,
 				D03E38A61C786838000AADE2 /* XQZNewViewController.m in Sources */,
 				D0DE0C3E1C88950300388C7A /* XQZUserGroup.m in Sources */,
 				D08903271C81885300BCED4C /* XQZFriendThrendsViewController.m in Sources */,
 				D05C823A1C82D3F500C91C46 /* XQZCategoryCell.m in Sources */,
+				D069B6531DC48595007AB85D /* XQZWorldTableViewController.m in Sources */,
 				D05C823F1C82E1A800C91C46 /* XQZUserCell.m in Sources */,
+				D069B65C1DC4A2B9007AB85D /* XQZTopic.m in Sources */,
 				D03E386A1C786635000AADE2 /* main.m in Sources */,
 				D089032B1C81941B00BCED4C /* XQZCategory.m in Sources */,
 			);
@@ -826,13 +861,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = AHRJ6ZJEZ4;
 				GCC_PREFIX_HEADER = "~/PuzzledSister/PuzzledSister/PuzzledSister/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = PuzzledSister/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.PuzzledSister;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "bbd5bd2c-102b-4adf-bb3b-9c42813626e9";
+				PROVISIONING_PROFILE_SPECIFIER = generalID;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -845,6 +882,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "~/PuzzledSister/PuzzledSister/PuzzledSister/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = PuzzledSister/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

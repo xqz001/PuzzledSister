@@ -7,8 +7,10 @@
 //  精华控制器
 
 #import "XQZBestViewController.h"
+
 #import "UIBarButtonItem+XQZExtension.h"
 #import "XQZTestViewController.h"
+# import "XQZWorldTableViewController.h"
 #import "XQZRecommendViewController.h"
 
 @interface XQZBestViewController () <UIScrollViewDelegate>
@@ -57,6 +59,7 @@
     
 }
 
+#pragma mark - 初始化子控制器
 /**
  *  初始化子控制器
  */
@@ -69,29 +72,29 @@
      
      这里采用第一种方法
      */
+    XQZWorldTableViewController *worldVC = [[XQZWorldTableViewController alloc] init];
+    worldVC.title = @"段子";
+    //    vc3.view.backgroundColor = [UIColor lightGrayColor];
+    [self addChildViewController:worldVC];
+    
     XQZTestViewController *vc1 = [[XQZTestViewController alloc] init];
     vc1.title = @"头条";
-    vc1.view.backgroundColor = [UIColor redColor];
+//    vc1.view.backgroundColor = [UIColor redColor];
     [self addChildViewController:vc1];
     
     XQZTestViewController *vc2 = [[XQZTestViewController alloc] init];
     vc2.title = @"娱乐";
-    vc2.view.backgroundColor = [UIColor purpleColor];
+//    vc2.view.backgroundColor = [UIColor purpleColor];
     [self addChildViewController:vc2];
-
-    XQZTestViewController *vc3 = [[XQZTestViewController alloc] init];
-    vc3.title = @"段子";
-    vc3.view.backgroundColor = [UIColor lightGrayColor];
-    [self addChildViewController:vc3];
     
     XQZTestViewController *vc4 = [[XQZTestViewController alloc] init];
     vc4.title = @"视频";
-    vc4.view.backgroundColor = [UIColor blueColor];
+//    vc4.view.backgroundColor = [UIColor blueColor];
     [self addChildViewController:vc4];
     
     XQZTestViewController *vc5 = [[XQZTestViewController alloc] init];
     vc5.title = @"图片";
-    vc5.view.backgroundColor = [UIColor brownColor];
+//    vc5.view.backgroundColor = [UIColor brownColor];
     [self addChildViewController:vc5];
     
 }
@@ -155,8 +158,8 @@
     contentScrollView.contentSize = CGSizeMake(self.childViewControllers.count * self.view.frame.size.width, 0);
     contentScrollView.delegate = self;
     contentScrollView.frame = CGRectMake(0, CGRectGetMaxY(scrollView.frame), self.view.frame.size.width, self.view.frame.size.height - CGRectGetMaxY(scrollView.frame));
-    contentScrollView.backgroundColor = [UIColor yellowColor];
     contentScrollView.pagingEnabled = YES;
+    contentScrollView.backgroundColor = [UIColor lightGrayColor];
 //    contentScrollView.showsHorizontalScrollIndicator = NO;
     [self.view addSubview:contentScrollView];
     
@@ -176,9 +179,9 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
-    XQZTestViewController *test = [[XQZTestViewController alloc] init];
-    test.view.backgroundColor = [UIColor yellowColor];
-    [self.navigationController pushViewController:test animated:YES];
+//    XQZTestViewController *test = [[XQZTestViewController alloc] init];
+//    test.view.backgroundColor = [UIColor yellowColor];
+//    [self.navigationController pushViewController:test animated:YES];
 }
 
 -(void)MainTagClick {
@@ -208,7 +211,6 @@
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    NSLog(@"================");
     
     NSInteger index = scrollView.contentOffset.x / self.view.frame.size.width;
     UIButton *button = self.titleButtonsArray[index];

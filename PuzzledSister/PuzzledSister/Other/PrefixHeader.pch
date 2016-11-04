@@ -15,6 +15,10 @@
 #endif /* PrefixHeader_pch */
 
 
+#define BASEURL @"http://api.budejie.com/api/api_open.php"
+
+
+
 #define GlobalBgColor RGBColor(223, 223, 223)
 
 #define RGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
