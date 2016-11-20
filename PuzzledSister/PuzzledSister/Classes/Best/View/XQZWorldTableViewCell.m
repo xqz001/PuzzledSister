@@ -19,6 +19,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *vipImageView;
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+@property (weak, nonatomic) IBOutlet UIButton *dingBtn;
+@property (weak, nonatomic) IBOutlet UIButton *caiBtn;
+@property (weak, nonatomic) IBOutlet UIButton *repostBtn;
+@property (weak, nonatomic) IBOutlet UIButton *commentBtn;
 @end
 
 @implementation XQZWorldTableViewCell
@@ -42,10 +46,15 @@
     self.nameLabel.text = topic.name;
     self.timeLabel.text = topic.create_time;
     self.contentLabel.text = topic.text;
+    [self.dingBtn setTitle:topic.ding forState:UIControlStateNormal];
+    [self.caiBtn setTitle:topic.cai forState:UIControlStateNormal];
+    [self.repostBtn setTitle:topic.repost forState:UIControlStateNormal];
+    [self.commentBtn setTitle:topic.comment forState:UIControlStateNormal];
     
 //    if (1) {
 //        
 //    }
 }
+
 
 @end

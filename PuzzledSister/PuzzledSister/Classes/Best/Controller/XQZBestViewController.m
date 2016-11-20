@@ -13,6 +13,7 @@
 # import "XQZWorldTableViewController.h"
 #import "XQZRecommendViewController.h"
 
+
 @interface XQZBestViewController () <UIScrollViewDelegate>
 
 @property (nonatomic, strong) NSArray *titles; /**< 标题数组 */
@@ -72,30 +73,31 @@
      
      这里采用第一种方法
      */
+    
+    XQZWorldTableViewController *allVC = [[XQZWorldTableViewController alloc] init];
+    allVC.title = @"全部";
+    allVC.topciType = XQZTopicTypeAll;
+    [self addChildViewController:allVC];
+    
     XQZWorldTableViewController *worldVC = [[XQZWorldTableViewController alloc] init];
     worldVC.title = @"段子";
-    //    vc3.view.backgroundColor = [UIColor lightGrayColor];
+    worldVC.topciType = XQZTopicTypeWorld;
     [self addChildViewController:worldVC];
     
-    XQZTestViewController *vc1 = [[XQZTestViewController alloc] init];
-    vc1.title = @"头条";
-//    vc1.view.backgroundColor = [UIColor redColor];
-    [self addChildViewController:vc1];
+    XQZWorldTableViewController *audoiVC = [[XQZWorldTableViewController alloc] init];
+    audoiVC.title = @"音频";
+    audoiVC.topciType = XQZTopicTypeAudio;
+    [self addChildViewController:audoiVC];
     
-    XQZTestViewController *vc2 = [[XQZTestViewController alloc] init];
-    vc2.title = @"娱乐";
-//    vc2.view.backgroundColor = [UIColor purpleColor];
-    [self addChildViewController:vc2];
+    XQZWorldTableViewController *videoVC = [[XQZWorldTableViewController alloc] init];
+    videoVC.title = @"视频";
+    videoVC.topciType = XQZTopicTypeVideo;
+    [self addChildViewController:videoVC];
     
-    XQZTestViewController *vc4 = [[XQZTestViewController alloc] init];
-    vc4.title = @"视频";
-//    vc4.view.backgroundColor = [UIColor blueColor];
-    [self addChildViewController:vc4];
-    
-    XQZTestViewController *vc5 = [[XQZTestViewController alloc] init];
-    vc5.title = @"图片";
-//    vc5.view.backgroundColor = [UIColor brownColor];
-    [self addChildViewController:vc5];
+    XQZWorldTableViewController *pictureVC = [[XQZWorldTableViewController alloc] init];
+    pictureVC.title = @"图片";
+    pictureVC.topciType = XQZTopicTypePicture;
+    [self addChildViewController:pictureVC];
     
 }
 

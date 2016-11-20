@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface XQZTopic : NSObject
 
@@ -20,6 +21,11 @@
 @property (nonatomic, copy) NSString *created_at; /**< 创建帖子时间 */
 @property (nonatomic, copy) NSString *create_time; /**< 时间 */
 @property (nonatomic, copy) NSString *text; /**< 帖子内容 */
+@property (nonatomic, copy) NSString *width; /**< 图片宽度 */
+@property (nonatomic, copy) NSString *height; /**< 图片高度 */
 
+
+
+@property (nonatomic, assign, readonly) CGFloat cellHeight; /**< 帖子内容的高度 */
 
 @end

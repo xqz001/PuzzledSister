@@ -14,4 +14,5 @@
 
 @property (nonatomic, strong) XQZTopic *topic; /**< 段子模型 */
 
+
 @end
