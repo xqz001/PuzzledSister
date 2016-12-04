@@ -11,6 +11,7 @@
 #import <UIImageView+WebCache.h>
 
 #import "XQZTopic.h"
+#import "XQZPictureView.h"
 
 @interface XQZWorldTableViewCell ()
 
@@ -23,13 +24,27 @@
 @property (weak, nonatomic) IBOutlet UIButton *caiBtn;
 @property (weak, nonatomic) IBOutlet UIButton *repostBtn;
 @property (weak, nonatomic) IBOutlet UIButton *commentBtn;
+@property (nonatomic, weak) XQZPictureView *pictureView; /*< 中间的图片 */
 @end
 
 @implementation XQZWorldTableViewCell
 
+- (XQZPictureView *)pictureView {
+    if (_pictureView == nil) {
+        
+        XQZPictureView *pictureView = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([XQZPictureView class]) owner:nil options:nil] lastObject];
+        self.pictureView = pictureView;
+        
+        [self.contentView addSubview:pictureView];
+    }
+    
+    return _pictureView;
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    
+    self.autoresizingMask = UIViewAutoresizingNone;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -51,9 +66,20 @@
     [self.repostBtn setTitle:topic.repost forState:UIControlStateNormal];
     [self.commentBtn setTitle:topic.comment forState:UIControlStateNormal];
     
-//    if (1) {
-//        
-//    }
+    if ([topic.type integerValue] != 29) {
+
+        self.pictureView.frame = CGRectMake(10, topic.contentLabelMaxH, [UIScreen mainScreen].bounds.size.width - 20, [topic.height floatValue]);
+        
+        self.pictureView.topic = topic;
+        
+    }
+    
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+//    NSLog(@"layoutSubViews-----%@----%@",NSStringFromCGRect(self.contentLabel.frame),NSStringFromCGRect(self.frame));
 }
 
 

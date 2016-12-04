@@ -77,6 +77,8 @@
 		D0A797381DDFFF6100F0D134 /* NSSet+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A797351DDFFF6100F0D134 /* NSSet+HYBUnicodeReadable.m */; };
 		D0B1545B1C9ECE2000049206 /* XQZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B154591C9ECE2000049206 /* XQZLoginViewController.m */; };
 		D0B1545C1C9ECE2000049206 /* XQZLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B1545A1C9ECE2000049206 /* XQZLoginViewController.xib */; };
+		D0CE214D1DE5F11D00695EAB /* XQZPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CE214C1DE5F11D00695EAB /* XQZPictureView.m */; };
+		D0CE214F1DE5F13E00695EAB /* XQZPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0CE214E1DE5F13E00695EAB /* XQZPictureView.xib */; };
 		D0DE0C3E1C88950300388C7A /* XQZUserGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DE0C3D1C88950300388C7A /* XQZUserGroup.m */; };
 		D0DE21E61C7F3190006D06C5 /* XQZNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DE21E51C7F3190006D06C5 /* XQZNavigationViewController.m */; };
 		D0DE21E91C7F4CE6006D06C5 /* XQZTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DE21E81C7F4CE6006D06C5 /* XQZTestViewController.m */; };
@@ -153,6 +155,9 @@
 		D0B154581C9ECE2000049206 /* XQZLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZLoginViewController.h; sourceTree = "<group>"; };
 		D0B154591C9ECE2000049206 /* XQZLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZLoginViewController.m; sourceTree = "<group>"; };
 		D0B1545A1C9ECE2000049206 /* XQZLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XQZLoginViewController.xib; sourceTree = "<group>"; };
+		D0CE214B1DE5F11D00695EAB /* XQZPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZPictureView.h; sourceTree = "<group>"; };
+		D0CE214C1DE5F11D00695EAB /* XQZPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZPictureView.m; sourceTree = "<group>"; };
+		D0CE214E1DE5F13E00695EAB /* XQZPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XQZPictureView.xib; sourceTree = "<group>"; };
 		D0DE0C3C1C88950300388C7A /* XQZUserGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZUserGroup.h; sourceTree = "<group>"; };
 		D0DE0C3D1C88950300388C7A /* XQZUserGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQZUserGroup.m; sourceTree = "<group>"; };
 		D0DE21E41C7F3190006D06C5 /* XQZNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQZNavigationViewController.h; sourceTree = "<group>"; };
@@ -323,6 +328,9 @@
 				D053A97F1DC7893F00BF0F0B /* XQZWorldTableViewCell.h */,
 				D053A9801DC7893F00BF0F0B /* XQZWorldTableViewCell.m */,
 				D053A9811DC7893F00BF0F0B /* XQZWorldTableViewCell.xib */,
+				D0CE214B1DE5F11D00695EAB /* XQZPictureView.h */,
+				D0CE214C1DE5F11D00695EAB /* XQZPictureView.m */,
+				D0CE214E1DE5F13E00695EAB /* XQZPictureView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -599,6 +607,7 @@
 			files = (
 				D09F9C6D1C59242400D36083 /* LaunchScreen.storyboard in Resources */,
 				D09F9C6A1C59242400D36083 /* Assets.xcassets in Resources */,
+				D0CE214F1DE5F13E00695EAB /* XQZPictureView.xib in Resources */,
 				D00B7CF51C90612C00ACF88A /* XQZRecommendCell.xib in Resources */,
 				D03E38691C786635000AADE2 /* Info.plist in Resources */,
 				D053A9831DC7893F00BF0F0B /* XQZWorldTableViewCell.xib in Resources */,
@@ -709,6 +718,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0CE214D1DE5F11D00695EAB /* XQZPictureView.m in Sources */,
 				D0A797381DDFFF6100F0D134 /* NSSet+HYBUnicodeReadable.m in Sources */,
 				D0DE21E91C7F4CE6006D06C5 /* XQZTestViewController.m in Sources */,
 				D03E38A21C786838000AADE2 /* XQZAttentionViewController.m in Sources */,

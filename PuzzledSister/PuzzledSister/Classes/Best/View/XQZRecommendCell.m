@@ -37,7 +37,7 @@
 //    MYLog(@"-------%p",self);
 
     MYLog(@"%@",self.nameLabel.text);
-    MYLog(@"=======%@",NSStringFromCGRect(frame));
+//    MYLog(@"=======%@",NSStringFromCGRect(frame));
     MYLog(@"\n");
     
     [super setFrame:customFrame];

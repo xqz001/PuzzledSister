@@ -40,7 +40,7 @@
     CGSize size = [@"发现一个奇怪的现象，家里有熊孩子的家庭更热衷生二胎。看到好多已经有熊孩子的父母选择生二胎，就好像打游戏大号练废了，再练个小号。#糗事##内涵##搞笑#" boundingRectWithSize:CGSizeMake([UIScreen mainScreen].bounds.size.width - 20, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14]} context:nil].size;
     
     
-    NSLog(@"=================%@=============",NSStringFromCGSize(size));
+//    NSLog(@"=================%@=============",NSStringFromCGSize(size));
     
     // 下拉刷新
     MJRefreshStateHeader *header = [MJRefreshStateHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewDatas)];
@@ -52,7 +52,7 @@
     self.tableView.mj_footer = footer;
     
     // 注册cell
-    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XQZWorldTableViewCell class]) bundle:nil] forCellReuseIdentifier:@"worldCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XQZWorldTableViewCell class]) bundle:nil] forCellReuseIdentifier:[NSString stringWithFormat:@"worldCell%d",self.topciType]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -170,14 +170,21 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath; {
     
     XQZTopic *topic = self.topicesArray[indexPath.row];
+//    NSLog(@"heightForRowAtIndexPath----%f",topic.cellHeight);
     return topic.cellHeight;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellIdentifier = @"worldCell";
+    NSString *cellIdentifier = [NSString stringWithFormat:@"worldCell%d",self.topciType];
     XQZWorldTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
+    NSLog(@"------%p===========",cell);
+    
+    
+    
     XQZTopic *topic = self.topicesArray[indexPath.row];
+    
+//    NSLog(@"%@",topic.text);
     
     cell.topic = topic;
     

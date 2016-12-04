@@ -129,7 +129,6 @@
                     <constraint firstItem="j8o-4m-hGU" firstAttribute="top" secondItem="c8E-QE-OuP" secondAttribute="top" id="YmF-jF-8iT"/>
                     <constraint firstItem="19X-jW-wrP" firstAttribute="leading" secondItem="xHv-0W-kGR" secondAttribute="trailing" constant="10" id="Zal-op-IZV"/>
                     <constraint firstAttribute="bottom" secondItem="c8E-QE-OuP" secondAttribute="bottom" id="b1y-JI-JNh"/>
-                    <constraint firstAttribute="trailing" secondItem="gxh-nZ-uTm" secondAttribute="trailing" constant="10" id="bz4-Z2-Yw6"/>
                     <constraint firstItem="xHv-0W-kGR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="cCg-SR-mw1"/>
                     <constraint firstAttribute="trailing" secondItem="dKu-zF-QVc" secondAttribute="trailing" id="d54-so-YtK"/>
                     <constraint firstItem="j8o-4m-hGU" firstAttribute="width" secondItem="c8E-QE-OuP" secondAttribute="width" id="dQu-O8-njK"/>
@@ -142,6 +141,7 @@
                     <constraint firstAttribute="bottom" secondItem="j8o-4m-hGU" secondAttribute="bottom" id="s5r-bX-oru"/>
                     <constraint firstItem="CDQ-Ap-5gx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="tpt-3G-eVD"/>
                     <constraint firstItem="gxh-nZ-uTm" firstAttribute="top" secondItem="anT-PW-H9J" secondAttribute="bottom" constant="10" id="tq0-np-AD2"/>
+                    <constraint firstAttribute="trailing" secondItem="gxh-nZ-uTm" secondAttribute="trailing" constant="10" id="vfE-Rt-nis"/>
                     <constraint firstAttribute="bottom" secondItem="s05-B2-CZu" secondAttribute="bottom" id="z63-xH-rPM"/>
                     <constraint firstItem="CDQ-Ap-5gx" firstAttribute="leading" secondItem="19X-jW-wrP" secondAttribute="trailing" constant="10" id="zPC-iS-cFr"/>
                     <constraint firstItem="dKu-zF-QVc" firstAttribute="top" secondItem="c8E-QE-OuP" secondAttribute="top" id="zop-YI-MiJ"/>
@@ -158,7 +158,7 @@
                 <outlet property="timeLabel" destination="anT-PW-H9J" id="GTp-Ha-EIA"/>
                 <outlet property="vipImageView" destination="CDQ-Ap-5gx" id="V8s-x2-zcB"/>
             </connections>
-            <point key="canvasLocation" x="-543" y="-153"/>
+            <point key="canvasLocation" x="-962" y="-166"/>
         </tableViewCell>
     </objects>
     <resources>
